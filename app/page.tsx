@@ -1,10 +1,12 @@
 "use client";
 
+import Footer from "@/components/ui/social";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { BookOpen, Code2, FileCode2, Github, Terminal } from "lucide-react";
 import ScreenshotsSection from '@/components/ui/ScreenshotsSection'
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,14 +23,18 @@ export default function Home() {
               Generate comprehensive documentation in seconds.
             </p>
             <div className="flex gap-4 justify-center">
-              <Button size="lg" className="gap-2 glow-effect bg-primary hover:bg-primary/90">
-                <FileCode2 className="w-5 h-5" />
-                Install Extension
-              </Button>
+              <Link href={"https://marketplace.visualstudio.com/items?itemName=Divyansh3021.inscribe"} target="_blank">
+                <Button size="lg" className="gap-2 glow-effect bg-primary hover:bg-primary/90">
+                  <FileCode2 className="w-5 h-5" />
+                  Install Extension
+                </Button>
+              </Link>
+              <Link href={"https://github.com/Divyansh3021/inscribe"} target="_blank">
               <Button size="lg" variant="outline" className="gap-2 border-primary/20 hover:bg-primary/10">
                 <Github className="w-5 h-5" />
                 View on GitHub
               </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -173,15 +179,18 @@ export default function Home() {
             Ready to transform your documentation workflow?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Install Inscribe today and experience the power of AI-driven
-            documentation generation.
+            Install Inscribe today.
           </p>
-          <Button size="lg" className="gap-2 glow-effect bg-primary hover:bg-primary/90">
-            <FileCode2 className="w-5 h-5" />
-            Get Started with Inscribe
-          </Button>
+          <Link href={"https://marketplace.visualstudio.com/items?itemName=Divyansh3021.inscribe"} target="_blank">
+            <Button size="lg" className="gap-2 glow-effect bg-primary hover:bg-primary/90">
+              <FileCode2 className="w-5 h-5" />
+              Get Started with Inscribe
+            </Button>
+          </Link>
         </div>
       </section>
+
+      <Footer />
     </main>
   );
 }
