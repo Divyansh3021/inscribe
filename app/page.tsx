@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { BookOpen, Code2, FileCode2, Github, Terminal } from "lucide-react";
+import ScreenshotsSection from '@/components/ui/ScreenshotsSection'
 
 export default function Home() {
   return (
@@ -162,6 +163,8 @@ export default function Home() {
           </Tabs>
         </div>
       </section>
+
+      <ScreenshotsSection />
 
       {/* CTA Section */}
       <section className="relative py-16 px-4 sm:px-6 lg:px-8 hero-gradient">
