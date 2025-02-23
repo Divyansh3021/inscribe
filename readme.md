@@ -1,8 +1,5 @@
 # Inscribe - Documentation Generator
 
-<p align="center">
-  <img src="extension/gitdoc/images/inscribe.png" alt="Inscribe Logo" width="128" height="128">
-</p>
 
 Inscribe is a powerful VS Code extension that automatically generates comprehensive documentation for your code. With just a few clicks, you can create well-structured documentation for individual files or entire projects, and keep it in sync with your codebase.
 
