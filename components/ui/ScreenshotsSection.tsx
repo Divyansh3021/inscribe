@@ -14,6 +14,14 @@ const screenshots: Screenshot[] = [
     alt: 'Screenshot 1 description'
   },
   {
+    src: "images/screenshots/flowchart_gen.gif",
+    alt: "Interactive Flowchart Generation"
+  },
+  {
+    src: "images/screenshots/class_diagram_gen.gif",
+    alt: "Class Diagram Generation"
+  },
+  {
     src: "images/screenshots/document_project.gif",
     alt: "Project Documentation Generation"
   },
